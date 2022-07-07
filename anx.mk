@@ -13,4 +13,6 @@ PRODUCT_PACKAGES += \
     anxres \
     ANXCamera
 
-TARGET_SYSTEM_PROP := $(ANX_PATH)/sys.prop
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.sf.lcd_density=320 \
+    ro.miui.notch=1
